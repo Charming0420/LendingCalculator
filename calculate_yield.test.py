@@ -55,16 +55,6 @@ def calculate_liquidation_time(initial_borrow, borrow_apy, liquidation_threshold
 
     return days_to_liquidation
 
-# # 用戶輸入參數
-# initial_deposit = 30000  # 初始存款
-# deposit_apy = 0.185  # 存款 APY
-# borrow_apy = 0.06  # 借款 APY
-# ltv = 0.8  # 借款 LTV
-# cycles = 10  # 循環次數
-# days = 60  # 運行天數
-# swap_slippage = 0.001  # Swap 磨耗，預設為 0.1%
-# liquidation_threshold = 0.85  # 清算閾值
-
 # 計算最高收益
 results = calculate_max_yield(initial_deposit, deposit_apy, borrow_apy, ltv, cycles, days, swap_slippage, liquidation_threshold)
 
